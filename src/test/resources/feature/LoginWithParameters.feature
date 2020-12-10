@@ -13,7 +13,6 @@ Feature: Login with parameters
   @studentParam
   Scenario: Login as student 30
     Given I am on the login page
-    When I enter username "student30@library"
-    And I enter password 'IaT9YI0I'
+    When I enter username "student30@library" and I enter password 'IaT9YI0I'
     And click sign in button
     Then books should be displayed
